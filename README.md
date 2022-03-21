@@ -1,4 +1,4 @@
-## flutter_linkedin
+## flutter_linkedin_api
 
 - A Flutter Package to login and get Profile Details from linkedIn.
 
@@ -70,4 +70,5 @@
 ```
 ### Additional Information
 
-[Get The Full API Documentation from here](http://api.smarttersstudio.com/flutter_linkedin/ "Get The Full API Documentation from here")
+[Get The Full API Documentation from here](http://api.smarttersstudio.com/flutter_linkedin_api/ "Get The Full API Documentation from here")
+# linkedin-auth
