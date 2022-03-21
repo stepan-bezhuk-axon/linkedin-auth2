@@ -4,9 +4,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/auth_error_response.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/auth_success_response.dart';
-import 'package:flutter_linkedin/linked_with_login/helpers/authorization_helper.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/auth_error_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/auth_success_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/helpers/authorization_helper.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class LinkedInWebView extends StatefulWidget {

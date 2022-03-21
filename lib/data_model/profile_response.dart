@@ -1,9 +1,6 @@
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 28/06/20 12:45 PM
 ///
-// To parse this JSON data, do
-//
-//     final linkedInProfile = linkedInProfileFromJson(jsonString);
 
 import 'dart:convert';
 

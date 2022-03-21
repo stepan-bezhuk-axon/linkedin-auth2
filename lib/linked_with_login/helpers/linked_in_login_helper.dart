@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/auth_error_response.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/auth_success_response.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/email_response.dart';
-import 'package:flutter_linkedin/linked_with_login/data_model/profile_response.dart';
-import 'package:flutter_linkedin/linked_with_login/helpers/access_token_helper.dart';
-import 'package:flutter_linkedin/linked_with_login/helpers/email_helper.dart';
-import 'package:flutter_linkedin/linked_with_login/helpers/profile_helper.dart';
-import 'package:flutter_linkedin/linked_with_login/widgets/linked_in_web_view.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/auth_error_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/auth_success_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/email_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/data_model/profile_response.dart';
+import 'package:flutter_linkedin_api/linked_with_login/helpers/access_token_helper.dart';
+import 'package:flutter_linkedin_api/linked_with_login/helpers/email_helper.dart';
+import 'package:flutter_linkedin_api/linked_with_login/helpers/profile_helper.dart';
+import 'package:flutter_linkedin_api/linked_with_login/widgets/linked_in_web_view.dart';
 
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 27/06/20 3:47 PM

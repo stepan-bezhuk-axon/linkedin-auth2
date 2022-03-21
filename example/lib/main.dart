@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/linkedloginflutter.dart';
+import 'package:flutter_linkedin_api/linkedloginflutter.dart';
 import 'profile_dialog.dart';
 
 void main() {

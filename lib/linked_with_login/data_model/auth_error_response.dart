@@ -29,6 +29,7 @@ class AuthorizationErrorResponse {
         "error": authTypeToError(error),
         "error_description": errorDescription,
       };
+
   static LinkedInAuthErrorType errorToAuthType(error) {
     switch (error) {
       case 'user_cancelled_login':

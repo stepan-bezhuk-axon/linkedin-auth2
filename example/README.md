@@ -70,4 +70,4 @@
 ```
 ### Additional Information
 
-[Get The Full API Documentation from here](http://api.smarttersstudio.com/flutter_linkedin/ "Get The Full API Documentation from here")
+[Get The Full API Documentation from here](http://api.smarttersstudio.com/flutter_linkedin_api/ "Get The Full API Documentation from here")

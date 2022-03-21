@@ -1,10 +1,6 @@
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 28/06/20 1:17 PM
 ///
-// To parse this JSON data, do
-//
-//     final linkedInEmail = linkedInEmailFromJson(jsonString);
-
 import 'dart:convert';
 
 LinkedInEmail linkedInEmailFromJson(String str) =>

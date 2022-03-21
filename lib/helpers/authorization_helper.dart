@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/config/api_routes.dart';
+import 'package:flutter_linkedin_api/config/api_routes.dart';
 
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 27/06/20 3:39 PM

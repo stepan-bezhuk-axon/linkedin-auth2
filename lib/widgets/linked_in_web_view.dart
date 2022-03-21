@@ -1,13 +1,12 @@
-import 'dart:async';
 import 'dart:io';
 
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 27/06/20 3:46 PM
 ///
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/data_model/auth_error_response.dart';
-import 'package:flutter_linkedin/data_model/auth_success_response.dart';
-import 'package:flutter_linkedin/helpers/authorization_helper.dart';
+import 'package:flutter_linkedin_api/data_model/auth_error_response.dart';
+import 'package:flutter_linkedin_api/data_model/auth_success_response.dart';
+import 'package:flutter_linkedin_api/helpers/authorization_helper.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class LinkedInWebView extends StatefulWidget {

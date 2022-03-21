@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/config/api_routes.dart';
+import 'package:flutter_linkedin_api/config/api_routes.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_linkedin/data_model/auth_error_response.dart';
-import 'package:flutter_linkedin/data_model/profile_error.dart';
-import 'package:flutter_linkedin/data_model/profile_response.dart';
+import 'package:flutter_linkedin_api/data_model/auth_error_response.dart';
+import 'package:flutter_linkedin_api/data_model/profile_error.dart';
+import 'package:flutter_linkedin_api/data_model/profile_response.dart';
 
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 28/06/20 12:54 PM

@@ -1,14 +1,14 @@
-library flutter_linkedin;
+library flutter_linkedin_api;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/data_model/auth_error_response.dart';
-import 'package:flutter_linkedin/data_model/auth_success_response.dart';
-import 'package:flutter_linkedin/data_model/email_response.dart';
-import 'package:flutter_linkedin/data_model/profile_response.dart';
-import 'package:flutter_linkedin/helpers/access_token_helper.dart';
-import 'package:flutter_linkedin/helpers/email_helper.dart';
-import 'package:flutter_linkedin/helpers/profile_helper.dart';
-import 'package:flutter_linkedin/widgets/linked_in_web_view.dart';
+import 'package:flutter_linkedin_api/data_model/auth_error_response.dart';
+import 'package:flutter_linkedin_api/data_model/auth_success_response.dart';
+import 'package:flutter_linkedin_api/data_model/email_response.dart';
+import 'package:flutter_linkedin_api/data_model/profile_response.dart';
+import 'package:flutter_linkedin_api/helpers/access_token_helper.dart';
+import 'package:flutter_linkedin_api/helpers/email_helper.dart';
+import 'package:flutter_linkedin_api/helpers/profile_helper.dart';
+import 'package:flutter_linkedin_api/widgets/linked_in_web_view.dart';
 
 ///
 /// Created By Guru (guru@smarttersstudio.com) on 27/06/20 3:47 PM
@@ -18,6 +18,7 @@ class LinkedInLogin {
 
 //  LinkedInLogin._internal();
   LinkedInLogin._();
+
   static void initialize(BuildContext context,
       {required String clientId,
       required String clientSecret,
@@ -49,7 +50,9 @@ class LinkedInLogin {
   String? accessToken;
 
   static Future<String> loginForAccessToken(
-      {PreferredSizeWidget? appBar, bool destroySession = true}) {
+      {PreferredSizeWidget? appBar,
+      bool destroySession = true,
+      bool isCode = true}) {
     _checkInst();
     return _inst._loginForAccessToken(
         appBar: appBar, destroySession: destroySession);
@@ -62,7 +65,9 @@ class LinkedInLogin {
   }
 
   Future<String> _loginForAccessToken(
-      {PreferredSizeWidget? appBar, bool destroySession = true}) async {
+      {PreferredSizeWidget? appBar,
+      bool destroySession = true,
+      bool isCode = true}) async {
     final authorizationData = await showDialog(
         context: context,
         builder: (context) => LinkedInWebView(
@@ -71,14 +76,19 @@ class LinkedInLogin {
               redirectUri: redirectUri,
               destroySession: destroySession,
             )).catchError((error) {
-      if (error is AuthorizationErrorResponse)
+      if (error is AuthorizationErrorResponse) {
         throw error;
-      else
+      } else {
         throw AuthorizationErrorResponse(errorDescription: error.toString());
+      }
     });
-    if (authorizationData == null)
+    if (authorizationData == null) {
       throw AuthorizationErrorResponse(errorDescription: 'unknown error');
+    }
     if (authorizationData is AuthorizationSuccessResponse) {
+      if (isCode) {
+        return authorizationData.code;
+      }
       accessToken = await getAccessToken(
               clientId: clientId,
               clientSecret: clientSecret,
